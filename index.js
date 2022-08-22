@@ -1,9 +1,24 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let reverseWord = []
+  for(let i = word.length -1; i >= 0; i--){
+    reverseWord.push(word[i])
+  }
+  return reverseWord.join("") === word
 }
 
+/* THE PROBLEM
+I need to check if the backwards form of the word
+is the same as forwards. therefore i need to first reverse
+the word and then simply check ===
+ */
+
 /* 
-  Add your pseudocode here
+initialize a new word array
+  for letters in word (i = 0, i > length, i++)
+  newword[index] counting up is equal to OG word index
+  counting down
+  turn array into string and return
+
 */
 
 /*
